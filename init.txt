@@ -1,0 +1,1 @@
+Full stack E-commerece Store web app using React, tailwind, nextJS, Prisma, MySQL.
