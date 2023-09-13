@@ -16,6 +16,7 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 
 import { Input } from "@/components/ui/input";
 import { AlertModal } from "@/components/modals/alert-modal";
+import { ApiAlert } from "@/components/ui/api-alert";
 
 
 
@@ -110,6 +111,8 @@ export const SettingsForm: React.FC<SettingsFormProps>= ({
                     </Button>
                 </form>
             </Form>
+            <Separator />
+            <ApiAlert title="NEXT_PUBLIC_API_URL" description={`${origin}/api/${params.storeId}`} variant="public"/>
         </>
     );
 };
